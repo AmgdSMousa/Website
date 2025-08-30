@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amged Sayed - About Me</title>
+  <style>
+    body {
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      color: white;
+      background: #4a90e2;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .contact a:hover {
+      background: #357ABD;
+    }
+    footer {
+      background: #eee;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .lang-switch {
+      margin-top: 1rem;
+    }
+    .lang-switch button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #4a90e2;
+      color: white;
+      cursor: pointer;
+    }
+    .lang-switch button:hover {
+      background: #357ABD;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Arabic Content -->
+  <div id="lang-ar" class="lang active" dir="rtl">
+    <header>
+      <h1>عمجد سيد</h1>
+      <p>التسويق الإلكتروني عبر واتساب | البريد الإلكتروني | لينكدإن</p>
+    </header>
+
+    <section>
+      <h2>نبذة عني</h2>
+      <p>
+        أعمل في مجال التسويق الإلكتروني من خلال إرسال رسائل عبر
+        <strong>واتساب</strong> أو <strong>البريد الإلكتروني</strong> أو <strong>لينكدإن</strong>،
+        وأسعى دائمًا لمساعدة الأفراد والشركات في الوصول إلى عملائهم بشكل فعال واحترافي.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>تواصل معي</h2>
+      <a href="https://www.facebook.com/am8ed" target="_blank">فيسبوك</a>
+      <a href="https://www.linkedin.com/in/amged-moussa-8016141b8/" target="_blank">لينكدإن</a>
+    </section>
+
+    <div class="lang-switch">
+      <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <footer>
+      &copy; 2025 جميع الحقوق محفوظة - Amged Sayed
+    </footer>
+  </div>
+
+  <!-- English Content -->
+  <div id="lang-en" class="lang">
+    <header>
+      <h1>Amged Sayed</h1>
+      <p>Digital Marketing Specialist | WhatsApp • Email • LinkedIn</p>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I work in the field of digital marketing by reaching out to potential clients
+        through <strong>WhatsApp</strong>, <strong>Email</strong>, and <strong>LinkedIn</strong>.  
+        My goal is to help individuals and businesses connect with their audience in an effective
+        and professional way.
+      </p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <a href="https://www.facebook.com/am8ed" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com/in/amged-moussa-8016141b8/" target="_blank">LinkedIn</a>
+    </section>
+
+    <div class="lang-switch">
+      <button onclick="switchLang('ar')">العربية</button>
+    </div>
+
+    <footer>
+      &copy; 2025 All Rights Reserved - Amged Sayed
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('lang-ar').classList.remove('active');
+      document.getElementById('lang-en').classList.remove('active');
+      document.getElementById('lang-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
